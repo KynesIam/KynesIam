@@ -20,6 +20,7 @@ Equilibration requires between 500 and 1000 initial sweeps of the Metropolis-Has
 
 std::random_device rd;
 std::mt19937 gen(rd());
+
 std::vector<std::vector<int>> generate_lattice(int lattice_size)
 {
     //Generates a random initial 2D lattice for monte carlo
@@ -40,8 +41,6 @@ std::vector<float> linspace(float a, float b, int num)
              // create a vector of length num
              std::vector<float> v(num);
              double tmp = 0.0;
-             
-             
              
              // now assign the values to the vector
              for (int i = 0; i < num; i++)
